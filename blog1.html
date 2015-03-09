@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Blog | Genius Media Solutions | Web Design & Development in Eugene Oregon</title>
+<meta name="description" content="Quality Custom Web Development. We specialize in bringing your ideas and goals to life. If it lives on the internet, we can build it.">
+<meta name="viewport" content="width=device-width">
+<meta property="og:image" content="http://geniusmediasolutions.com/assets/gms-icon.png" />
+<link rel="stylesheet" href="css/bootstrap.css">
+<style>
+body {
+	padding-top: 105px;
+}
+</style>
+<link rel="stylesheet" href="css/bootstrap-responsive.css">
+<link rel="stylesheet" href="css/font-awesome.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/green.css">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<!--[if lt IE 9]>
+            <script src="js/html5-3.6-respond-1.1.0.min.js"></script>
+        <![endif]-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19241869-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <i class="icon icon-reorder"></i> Menu </a> <a class="brand" href="#">Genius Media Solutions</a>
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li class="active"><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse --> 
+    </div>
+  </div>
+  <div class="sub-navbar">
+    <div class="container">
+      <p><i class="icon icon-comment"></i> A Different Kind Of Development Company | Eugene, Or | 541.357.9021</p>
+    </div>
+  </div>
+</div>
+<div class="main">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <h2><span>Our official blog</span></h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span9"> 
+        <!--top article-->
+        <article class="row"> 
+          <!--author meta-->
+          <div class="span2"> <img class="pull-left avatar" src="assets/geoff.png" alt="user"  width="60" height="60"/> <strong>Written by:</strong>
+            <p>Geoff Miller</p>
+            <span class="label label-success"><small>Co-Owner GMS</small></span>
+            <hr>
+            <p>October 18, 2012</p>
+            <ul class="tags">
+              <li>Eugene</li>
+              <li>Startup Weekend</li>
+              <li>CheckMeONCE</li>
+              <li>IndeGoHalfsies</li>
+            </ul>
+          </div>
+          <!--post-->
+          <div class="span7">
+            <h3>Genius Media Solutions Takes 1st & 3rd place @ the first ever Eugene startup weekend</h3>
+            <img class="post-image" src="assets/post-image-3.png" alt="blog post">
+            <p>When I first started designing interactive products, it was a struggle. Small projects were fine. But when the interactions got more complex, I noticed that tools, team communication, and even my own thinking started breaking down. I see many startups facing these same problems today. So I wanted to share...</p>
+            <a href="#">Continue reading &raquo;</a> </div>
+          <!--end post--> 
+        </article>
+        <!--/row-->
+        <hr>
+        <!--first article-->
+        <article class="row"> 
+          <!--author meta-->
+          <div class="span2"> <img class="pull-left avatar" src="assets/aaron.png" alt="user" width="60" height="60"/> <strong>Written by:</strong>
+            <p>Aaron DuChateau</p>
+            <span class="label label-success"><small>Co-Owner GMS</small></span>
+            <hr>
+            <p>June 24, 2012</p>
+            <ul class="tags">
+              <li>PHP</li>
+              <li>Calender</li>
+              <li>jQuery</li>
+              <li>Tutorial</li>
+            </ul>
+          </div>
+          <!--post-->
+          <div class="span7">
+            <h3>Looping Calendaring with PHP</h3>
+            <img class="post-image" src="assets/post-image-1.png" alt="blog post"> <strong>In one of our more recent web development projects, we were creating a training calendaring application with the following criterion:</strong><br>
+            <br>
+            Training programs may run any given length (i.e. ten days), however if a trainer scheduled a training program from july 1st to july 28th, the program would need to 'loop', so that within the context of the 28 day long period, you would have 2 and 4/5 iterations of a specific training program length. A program can be infinitely long or small, and run for any days specified.<br>
+            <!--article cut-->
+            <div id="article-body" style="display:none;">
+              <p></p>
+              <p>I started by breaking down the resources i would need and grabbing them from my database.<br>
+              </p>
+              <div style="margin-top: 0px;"></div>
+              <br>
+              using two simple contstants i can perform the operation necessary to get my desired results:<br>
+              <code><br>
+              $days_in_between<br>
+              //is number of days between booking start date and the date passed from the calendar on the date clicked on the calendar<br>
+              $days_in_tp_original<br>
+              //is the number of days that the program was meant to run.<br>
+              </code><br>
+              first i need to see if the length of the program on the day clicked, is over the 'loop' limit<br>
+              <code><br>
+              if($days_in_between &lt;=$days_in_tp_original){<br>
+              $query_this_day = $days_in_between;<br>
+              }<br>
+              </code><br>
+              if it is then we're done! but what if it isn't? we need to create a constant that is a base number (for how many times the value between the start date of the program and the current day shown goes into the amount of days in the original program).<br>
+              <code><br>
+              else{<br>
+              $result_divide = floor($days_in_between / $days_in_tp_original);<br>
+              </code><br>
+              fantastic! now all we have to do is multiply the number of whole times 'days in between' goes into 'original days', by the original day in the program. This gives us a number to subtract from our initial number of days between when the program starts, and the day on the calendar that was clicked.<br>
+              <code><br>
+              $query_this_day = $days_in_between-($result_divide*$days_in_tp_original);<br>
+              </code><br>
+              Seems easy enough, but oh snap! there's a problem! Each day in a program is numbered 1-whatever. Using the above math, if we enter into the state of being in the last day of the program (i.e. still a valid number), the result will be 0. This will cause a query error in the database! to deal with this we create the following exception, which speaks for itself.<br>
+              <code><br>
+              if($query_this_day==0){$query_this_day=$days_in_tp_original; }}<br>
+              </code><br>
+              hopefully this code can help you in your web development pursuits if you are dealing with a similar issue. The whole code snippet of this logic is presented below.<br>
+              <code><br>
+              //$days_in_between is number of days between booking start date and the date passed from the calendar<br>
+              //$days_in_tp_original is number of days that the program was meant to run.<br>
+              if($days_in_between &lt;=$days_in_tp_original){<br>
+              $query_this_day = $days_in_between;<br>
+              }else{<br>
+              ////////////////////////////////////<br>
+              $result_divide = floor($days_in_between / $days_in_tp_original);<br>
+              //////////////////////////////////<br>
+              $query_this_day = $days_in_between-($result_divide*$days_in_tp_original);<br>
+              if($query_this_day==0){$query_this_day=$days_in_tp_original; }<br>
+              }<br>
+              </code>
+              <p></p>
+            </div>
+            <!--end article-body--> 
+            <a href="" id="read-more">Continue reading &raquo;</a> </div>
+          <!--end post--> 
+        </article>
+        <!--/row-->
+        
+        <hr>
+        
+        <!--second article-->
+        <article class="row"> 
+          <!--author meta-->
+          <div class="span2"> <img class="pull-left avatar" src="assets/aaron.png" alt="user" width="60" height="60"/> <strong>Written by:</strong>
+            <p>Aaron DuChateau</p>
+            <span class="label label-success"><small>Co-Owner GMS</small></span>
+            <hr>
+            <p>May 22, 2012</p>
+            <ul class="tags">
+              <li>Dates</li>
+              <li>Javascript</li>
+            </ul>
+          </div>
+          <!--post-->
+          <div class="span7">
+            <h3>Parsing Dates with Javascript</h3>
+            <img class="post-image" src="assets/post-image-2.png" alt="blog post">
+            <p>We currently have a client who has asked us to create an online booking system, so in an attempt to pass most of the parsing client side, i decided to use javascript rather than php to handle looping through our month view for the calendar in question. An interesting bug/twist i came across was how the javascript parse function (i.e. turning a timestamp from 2012/05/22/ into 2398723958723) totally drops the ball on handling the 31st of the month. This is to say that 2012/05/31 returns the exact same integer as 2012/06/01. I circumnavigated this nasty issue by using ajax to only bring up one month view at a time. But lets say that's not an option? what do you do? well thanks to Nicolas <a href="http://nicolascadou.com/blog/2009/04/javascript-date-parsing-woes/" target="_blank">Cadou's blog post</a> you can take control away from the javascript parse function and perform the following routine to sanitize this unfortunate javascript short fall.</p>
+            <div id="article-body" style="display:none;">
+            <p><code>function makeDateFromIsoString(isoString)
+              {<br>
+              if (isoString == null)<br>
+              return null;<br>
+              var date = new Date();<br>
+              date.setFullYear(isoString.substr(0, 4));<br>
+              date.setDate(isoString.substr(8, 2));<br>
+              date.setMonth(isoString.substr(5, 2) - 1);<br>
+              date.setHours(0);<br>
+              date.setMinutes(0);<br>
+              date.setSeconds(0);<br>
+              return date;<br>
+              }</code></p>
+            <p>or if you want an even cleaner solution, simply replace your hashes with slashes.<br>
+              <code>Date(isoString.replace('-', '/', 'g'))</code><br>
+              making this simple replacement will prevent javascript from messing up when you use parse. Hope this helps someone as it helped me. </p>
+            </div><!--article-body-->
+            <a href="" id="read-more">Continue reading &raquo;</a> </div>
+          <!--end post--> 
+        </article>
+        <!--/row-->
+        
+        <hr>
+        
+        <!--third article-->
+        <article class="row"> 
+          <!--author meta-->
+          <div class="span2"> <img class="pull-left avatar" src="assets/user-3.png" alt="user"/> <strong>Written by:</strong>
+            <p>Calisto MT</p>
+            <span class="label label-success"><small>Advisor</small></span>
+            <hr>
+            <p>September 12, 2019</p>
+            <ul class="tags">
+              <li>Social Media</li>
+              <li>Trending Tech</li>
+              <li>Branding</li>
+              <li>iOS Apps</li>
+            </ul>
+          </div>
+          <!--post-->
+          <div class="span7">
+            <h3>Hacking your brain to think like a user</h3>
+            <img class="post-image" src="assets/post-image-3.png" alt="blog post">
+            <p>When I first started designing interactive products, it was a struggle. Small projects were fine. But when the interactions got more complex, I noticed that tools, team communication, and even my own thinking started breaking down. I see many startups facing these same problems today. So I wanted to share...</p>
+            <div id="article-body" style="display:none;">
+            story is in here
+            </div><!-- end article-body-->
+            <a href="" id="article-body">Continue reading &raquo;</a> </div>
+          <!--end post--> 
+        </article>
+        <!--/row-->
+        <hr>
+      </div>
+      <!--/span9--> 
+      
+      <!--sidebar--> 
+      <!--
+      <aside class="span3">
+        <div class="well">
+          <h4>Blog Categories:</h4>
+          <hr>
+          <ul class="categories">
+            <li><a href="#"><i class="icon icon-circle-arrow-right"></i> Networking</a></li>
+            <li><a href="#"><i class="icon icon-circle-arrow-right"></i> Web applications</a></li>
+            <li><a href="#"><i class="icon icon-circle-arrow-right"></i> iOS development</a></li>
+            <li><a href="#"><i class="icon icon-circle-arrow-right"></i> Latest news</a></li>
+            <li><a href="#"><i class="icon icon-circle-arrow-right"></i> New releases</a></li>
+            <li><a href="#"><i class="icon icon-circle-arrow-right"></i> Most downloaded</a></li>
+          </ul>
+          <hr>
+          <p>Don't miss the chance to visit our headquarter from monday through friday from 9am to 5pm. Best regards from the whole Venture Team.</p>
+        </div>
+        <!--/well--> 
+      <!--
+        <div class="well">
+          <h4>Newsletter Signup:</h4>
+          <hr>
+          <form class="centered">
+            <input class="" type="text" placeholder="Email">
+            <br/>
+            <br/>
+            <button type="submit" class="btn">Ok, sign me up!</button>
+          </form>
+        </div>
+        <!--/well--> 
+      <!--
+        <div class="well adspace">
+          <h4>Sponsors:</h4>
+          <hr>
+          <a href="#"><img src="assets/ad-1.png" alt="ad"/></a> <a href="#"><small>Learn Photoshop</small></a> <a href="#"><img src="assets/ad-2.png" alt="ad"/></a> <a href="#"><small>Learn Elements</small></a> <a href="#"><img src="assets/ad-3.png" alt="ad"/></a> <a href="#"><small>Learn Lightroom</small></a> </div>
+        <!--/well--> 
+      <!-- 
+      </aside>
+      <!--/span3--> 
+      
+    </div>
+    <!--/.row--> 
+  </div>
+  <!--/container--> 
+</div>
+<!--/main--> 
+
+<
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <p>&copy; Genius Media Solutions LLC <span id="date"></span></p>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script> 
+<script>window.jQuery || document.write('<script src="js/jquery-1.8.0.min.js"><\/script>')</script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/script.js"></script> 
+<script type="text/javascript">
+			  //var currentYear = (new Date).getFullYear();
+			  $(document).ready(function() {
+			  $("#date").text( (new Date).getFullYear() );
+			  //toggle articles
+			  $('a#read-more').click(function(e){
+				  e.preventDefault();
+				  //alert($(this).parent().children('div').attr('id'));
+				  $(this).parent().children('div').slideToggle();
+				  $(this).hide();
+				  })
+			  });
+	    </script>
+</body>
+</html>
