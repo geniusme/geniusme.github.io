@@ -61,47 +61,16 @@ body {
           <div class="container">
     <h2><span>Contact us</span></h2>
     <div class="row">
-              <div class="span4" id="send_mail">
-        <h4>Drop us a line</h4>
-        <div class="form">
-                  <label for="name">Your name:</label>
-                  <input class="span4" type="text" id="name" placeholder="">
-                  <label for="inputEmail">Email:</label>
-                  <input class="span4" type="text" id="inputEmail" placeholder="">
-                  <label for="message">Your message:</label>
-                  <textarea class="span4" rows="4" placeholder="message" id="message"></textarea>
-                  <button class="btn" id="email_btn">send it.</button><img src="assets/pacman.gif" id="loader" style="display:none;"/>
-                </div>
+      <div class="span12" id="send_mail">
+        <h2 style="background:none">
+          <a href="mailto:geoff@geniusmediasolutions.com">geoff@geniusmediasolutions.com</a>
+        </h2>
+        <h2 style="background:none">
+          541-357-9021
+        </h2>
       </div>
-      			
-              <!--hidden Thanks-->
-              <div class="span4" id="success" style="display:none;">
-        <h4>Thanks!</h4>
-        <p>We will get back to your messages ASAP.</p>
-        <img src="assets/envelope.png"/> </div>
-              <!--end hidden thanks-->
-              
-              <div class="span4">
-        <h4>Reach us</h4>
-        <div class="well">
-                  <p>info@GeniusMediaSolutions.com</p>
-                  <hr>
-                  <p> Genius Media Solutions LLC<br/>
-            72 W. Broadway Suite 201<br/>
-            Eugene Oregon, 97401<br/>
-          </p>
-                  <hr>
-                  <p>CALL US: 541.357.9021</p>
-                </div>
-      </div>
-              <div class="span4">
-        <h4>Visit us</h4>
-        <a target="_blank" href="https://maps.google.com/maps?q=72+w.+broadway+eugene+oregon+suite+220&hl=en&sll=44.049704,-123.093839&sspn=0.014173,0.033023&gl=us&hnear=72+W+Broadway+%23220,+Eugene,+Lane,+Oregon+97401&t=m&z=17&iwloc=A">
-        <img class="framed" src="assets/map-72-w-broadway-eugene-oregon-220.png" alt="map"/>
-        </a>
-        
-        </div>
-            </div>
+
+    </div>
     <!--/.row--> 
     
   </div>
@@ -118,42 +87,10 @@ body {
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script> 
 <script>window.jQuery || document.write('<script src="js/jquery-1.8.0.min.js"><\/script>')</script> 
 <script src="js/bootstrap.min.js"></script> 
-<script src="js/script.js"></script> 
 <script type="text/javascript">
-			  //var currentYear = (new Date).getFullYear();
-	$(document).ready(function() {
-			  
-			  $("#date").text( (new Date).getFullYear() );
-			  
-			  //email
-			  $('#email_btn').click(function(e){
-				  
-				  e.preventDefault();
-				  
-				  //$('#send_mail').hide();
-				  $('#loader').show();
-					
-					var $name=$('#name').val();
-					var $email=$('#inputEmail').val();
-					var $message=$('#message').val();
-					
-					//alert($name + $email + $message);
-				  
-				 $.post("mail.php",
-					 {name:$name, email:$email, message:$message},
-					  function(data){
-				  		$('#loader').hide();
-						$('#send_mail').hide();
-				  		$('#success').fadeIn('fast');
-				    }, 
-					'text'); 
-				  
-				  });
-				
-				
-				
-	
-	});
-	    </script>
+$(document).ready(function() {
+	$("#date").text( (new Date).getFullYear() );
+});
+</script>
 </body>
 </html>
